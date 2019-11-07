@@ -1,0 +1,13 @@
+<%- include ../partials/header.ejs %>
+
+<form action="/create" method="post">
+    <input type="text" name = "maträtt" placeholder="maträtt">
+    <br>
+    <input type="text" name="vecka" placeholder="vecka">
+    <br>
+    <input type="text" name="instruktioner" placeholder="instruktioner">
+    <br>
+    <input type="submit" value="spara maträtt">
+</form>
+
+<%- include ../partials/footer.ejs %>
