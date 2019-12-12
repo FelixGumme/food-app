@@ -23,11 +23,13 @@ app.get("/", async (req, res) =>{
     res.render("pages/index", {title : "Homepage"}); // renders the page
 });
 
-// creates a car
+//
+// Route create a meal
+//
 app.get("/create", async (req, res) =>{
     res.render("pages/create", {title : "Lägg till maträtt"}); // renders the page
 
-    res.sendFile(__dirname + ""); // need stuff here
+    
 });
 app.post("/create", async (req, res) => {
         
@@ -41,11 +43,18 @@ app.post("/create", async (req, res) => {
 
 });
 
+//
+// Route delete a meal
+//
 app.get("/delete", async (req, res) =>{
     res.render("pages/delete", {title : "ta bort en maträtt"}); // renders the page
     
 });
 
+
+//
+// Route update a meal
+//
 app.get("/update", async (req, res) =>{
     res.render("pages/update", {title : "uppdatera din maträtt"}); // renders the page
 });
